@@ -1,0 +1,123 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$add-name: 'add';
+$add-x: 16px;
+$add-y: 0px;
+$add-offset-x: -16px;
+$add-offset-y: 0px;
+$add-width: 15px;
+$add-height: 15px;
+$add-total-width: 31px;
+$add-total-height: 62px;
+$add-image: 'sprite.png';
+$add: (16px, 0px, -16px, 0px, 15px, 15px, 31px, 62px, 'sprite.png', 'add', );
+$csv-name: 'csv';
+$csv-x: 0px;
+$csv-y: 16px;
+$csv-offset-x: 0px;
+$csv-offset-y: -16px;
+$csv-width: 16px;
+$csv-height: 14px;
+$csv-total-width: 31px;
+$csv-total-height: 62px;
+$csv-image: 'sprite.png';
+$csv: (0px, 16px, 0px, -16px, 16px, 14px, 31px, 62px, 'sprite.png', 'csv', );
+$drag-name: 'drag';
+$drag-x: 0px;
+$drag-y: 30px;
+$drag-offset-x: 0px;
+$drag-offset-y: -30px;
+$drag-width: 5px;
+$drag-height: 32px;
+$drag-total-width: 31px;
+$drag-total-height: 62px;
+$drag-image: 'sprite.png';
+$drag: (0px, 30px, 0px, -30px, 5px, 32px, 31px, 62px, 'sprite.png', 'drag', );
+$settings-name: 'settings';
+$settings-x: 0px;
+$settings-y: 0px;
+$settings-offset-x: 0px;
+$settings-offset-y: 0px;
+$settings-width: 16px;
+$settings-height: 16px;
+$settings-total-width: 31px;
+$settings-total-height: 62px;
+$settings-image: 'sprite.png';
+$settings: (0px, 0px, 0px, 0px, 16px, 16px, 31px, 62px, 'sprite.png', 'settings', );
+$spritesheet-width: 31px;
+$spritesheet-height: 62px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($add, $csv, $drag, $settings, );
+$spritesheet: (31px, 62px, 'sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

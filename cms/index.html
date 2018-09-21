@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+
+      <meta charset="UTF-8">
+
+      <!-- responsive -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- / responsive -->
+
+      <title>Icbcode CMS</title>
+      
+      <!-- favicon -->
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+      <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+      <link rel="manifest" href="img/favicon/manifest.json">
+      <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="theme-color" content="#ffffff">
+      <!-- / favicon -->
+      
+      <!-- libs -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+       <link rel="stylesheet" href="libs/ui/jquery-ui.min.css" />
+      <!-- / libs -->
+      
+      <!-- custom styles & responsive -->
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/media.css">
+      <!-- / custom styles & responsive -->
+
+   </head>
+   <body>
+      
+      <div class="loader"></div>
+      
+      <div class="mobile-bar">
+               <div id="nav-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>      
+               <a href="/" class="logo">
+                  <img src="img/logo-min.png">
+               </a>   
+      </div>
+
+      <div class="mobile-menu">
+         <ul>
+            <li>
+               <a href="#">
+                  <span class="icon-wrap">
+                     <img src="img/menu1.svg">
+                  </span>
+                  <span>Страницы сайта</span>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <span class="icon-wrap">
+                     <img src="img/menu2.svg">
+                  </span>
+                  <span>Уведомления</span>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <span class="icon-wrap">
+                     <img src="img/menu3.svg">
+                  </span>
+                  <span>Настройки сайта</span>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <span class="icon-wrap">
+                     <img src="img/menu4.svg">
+                  </span>
+                  <span>На сайт</span>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <span class="icon-wrap">
+                     <img src="img/menu5.svg">
+                  </span>
+                  <span>Выход</span>
+               </a>
+            </li>
+         </ul>
+      </div>
+
+      <div class="left-bar">
+         <a href="/" class="logo"><img src="img/logo-min.png"></a>
+
+         <ul class="menu">
+            <li class="active">
+               <a href="#" class="tooltip" title="Страницы сайта">
+                  <span class="icon-wrap">
+                     <img src="img/menu1.svg">
+                  </span>
+               </a>
+            </li>
+            <li>
+               <a href="#" class="tooltip" title="Уведомления">
+                  <span class="icon-wrap">
+                     <img src="img/menu2.svg">
+                  </span>
+               </a>
+            </li>
+            <li>
+               <a href="#" class="tooltip" title="Настройки сайта">
+                  <span class="icon-wrap">
+                     <img src="img/menu3.svg">
+                  </span>
+               </a>
+            </li>
+            <li>
+               <a href="#" class="tooltip" title="На сайт">
+                  <span class="icon-wrap">
+                     <img src="img/menu4.svg">
+                  </span>
+               </a>
+            </li>
+            <li>
+               <a href="#" class="tooltip" title="Выход">
+                  <span class="icon-wrap">
+                     <img src="img/menu5.svg">
+                  </span>
+               </a>
+            </li>
+         </ul>
+      </div>
+
+      <div class="page-content">
+         <div class="top-bar">
+
+            <div class="breadcrumbs">
+               <a href="/" class="website-name">Mamontt.ru</a>
+               <span class="pre"> / </span>
+               <span>Панель управления</span>
+            </div>
+
+            <div class="right">
+               <ul>
+                     <li>
+                        <a href="#">
+                           <span class="icon-wrap">
+                              <img src="img/icons/setting.svg">
+                           </span>
+                           <span class="name">Настройки</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" target="_blank">
+                           <span class="icon-wrap">
+                              <img src="img/icons/reply.svg">
+                           </span>
+                           <span class="name">На сайт</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <span class="icon-wrap">
+                              <img src="img/icons/exit.svg">
+                           </span>
+                           <span class="name">Выход</span>
+                        </a>
+                     </li>
+                  </ul>   
+            </div>
+
+         </div>
+
+         <div class="content">
+            <p class="page-title">Управление страницами сайта</p>
+
+            <div class="pages-module">
+                  <ul>
+                     <li class="active"><a href="#">Главное меню</a></li>
+                     <li><a href="#">Продукция</a></li>
+                     <li><a href="#">FAQ</a></li>
+                     <li><a href="#">Слайдер</a></li>
+                     <li><a href="#">Баннеры</a></li>
+                     <li><a href="#">Другое</a></li>
+                     <li class="add"><a href="#">+</a></li>
+                  </ul>  
+            </div>
+
+            <div class="pages-module-buttons">
+               <a href="#" class="add"><span>Добавить страницу</span></a>
+               <a href="#" class="csv"><span>Импорт из CSV</span></a>
+            </div>
+            
+            <div class="wrapper">
+               <div class="table-list">
+                  <table>
+                     <thead>
+                     <tr>
+                        <th>Номер</th>
+                        <th>Наименование</th>
+                        <th>Шаблон данных</th>
+                        <th class="opacity">На сайте</th>
+                        <th class="opacity">Добавить</th>
+                        <th class="opacity">Правка</th>
+                        <th class="opacity">Удалить</th>
+                     </tr>
+                     </thead>
+                     <tbody>
+                     <tr>
+                        <td data-label="Номер">10131</td>
+                        <td data-label="Наименование"><a href="#">Главная страница</a></td>
+                        <td data-label="Шаблон данных">Главная</td>
+                        <td data-label="На сайте" class="td-btn"><a href="#" class="btn-create1" title="Посмотреть на сайте"></a></td>
+                        <td data-label="Добавить" class="td-btn"><a href="#" class="btn-create4" title="Добавить"></a></td>
+                        <td data-label="Правка" class="td-btn"><a href="#" class="btn-create2" title="Редактировать"></a></td>
+                        <td data-label="Удалить" class="td-btn"><a href="#" class="btn-create3" title="Удалить"></a></td>
+                     </tr>
+                     <tr>
+                        <td data-label="Номер">10131</td>
+                        <td data-label="Наименование"><a href="#">Информация о компании</a></td>
+                        <td data-label="Шаблон данных">Внутренняя</td>
+                        <td data-label="На сайте" class="td-btn"><a href="#" class="btn-create1" title="Посмотреть на сайте"></a></td>
+                        <td data-label="Добавить" class="td-btn"><a href="#" class="btn-create4" title="Добавить"></a></td>
+                        <td data-label="Правка" class="td-btn"><a href="#" class="btn-create2" title="Редактировать"></a></td>
+                        <td data-label="Удалить" class="td-btn"><a href="#" class="btn-create3" title="Удалить"></a></td>
+                     </tr>
+                     <tr>
+                        <td data-label="Номер">10131</td>
+                        <td data-label="Наименование"><a href="#">Наша продукция</a></td>
+                        <td data-label="Шаблон данных">Каталог</td>
+                        <td data-label="На сайте" class="td-btn"><a href="#" class="btn-create1" title="Посмотреть на сайте"></a></td>
+                        <td data-label="Добавить" class="td-btn"><a href="#" class="btn-create4" title="Добавить"></a></td>
+                        <td data-label="Правка" class="td-btn"><a href="#" class="btn-create2" title="Редактировать"></a></td>
+                        <td data-label="Удалить" class="td-btn"><a href="#" class="btn-create3" title="Удалить"></a></td>
+                     </tr>
+                     <tr>
+                        <td data-label="Номер">10131</td>
+                        <td data-label="Наименование"><a href="#">Сервис</a></td>
+                        <td data-label="Шаблон данных">Внутренняя</td>
+                        <td data-label="На сайте" class="td-btn"><a href="#" class="btn-create1" title="Посмотреть на сайте"></a></td>
+                        <td data-label="Добавить" class="td-btn"><a href="#" class="btn-create4" title="Добавить"></a></td>
+                        <td data-label="Правка" class="td-btn"><a href="#" class="btn-create2" title="Редактировать"></a></td>
+                        <td data-label="Удалить" class="td-btn"><a href="#" class="btn-create3" title="Удалить"></a></td>
+                     </tr>
+                     <tr>
+                        <td data-label="Номер">10131</td>
+                        <td data-label="Наименование"><a href="#">FAQ</a></td>
+                        <td data-label="Шаблон данных">FAQ</td>
+                        <td data-label="На сайте" class="td-btn"><a href="#" class="btn-create1" title="Посмотреть на сайте"></a></td>
+                        <td data-label="Добавить" class="td-btn"><a href="#" class="btn-create4" title="Добавить"></a></td>
+                        <td data-label="Правка" class="td-btn"><a href="#" class="btn-create2" title="Редактировать"></a></td>
+                        <td data-label="Удалить" class="td-btn"><a href="#" class="btn-create3" title="Удалить"></a></td>
+                     </tr>
+                     <tr>
+                        <td data-label="Номер">10131</td>
+                        <td data-label="Наименование"><a href="#">Контакты</a></td>
+                        <td data-label="Шаблон данных">Контакты</td>
+                        <td data-label="На сайте" class="td-btn"><a href="#" class="btn-create1" title="Посмотреть на сайте"></a></td>
+                        <td data-label="Добавить" class="td-btn"><a href="#" class="btn-create4" title="Добавить"></a></td>
+                        <td data-label="Правка" class="td-btn"><a href="#" class="btn-create2" title="Редактировать"></a></td>
+                        <td data-label="Удалить" class="td-btn"><a href="#" class="btn-create3" title="Удалить"></a></td>
+                     </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+
+            <div class="page-bottom-module">
+               <div class="arrows">
+                  <a href="#" class="left"></a>
+                  <a href="#" class="right"></a>
+               </div>
+               <div class="more-btn-wrap">
+                  <a href="#"><span>Показать еще</span></a>
+               </div>
+               <div class="pagination">
+                  <p class="name">Страницы:</p>
+                  <ul>
+                     <li><a href="#">1</a></li>
+                     <li class="active"><a href="#">2</a></li>
+                     <li><a href="#">3</a></li>
+                     <li><a href="#">4</a></li>
+                     <li><a><span class="dotted">...</span></a></li>
+                     <li><a href="#">78</a></li>
+                  </ul>
+               </div>
+            </div>
+
+         </div>
+      </div>
+      
+      
+      <!-- javascript libs -->
+      <script src="js/jquery.js"></script>
+      <script src="libs/ui/jquery-ui.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+      <!-- / javascript libs -->
+
+      <!-- custom javascript -->
+      <script src="js/init.js"></script>
+      <!-- / custom javascript -->
+
+   </body>
+</html>

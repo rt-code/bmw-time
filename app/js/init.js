@@ -1,5 +1,24 @@
 $(document).ready(function () {
 
+    // slider
+    $('.service-details-slider-big').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        asNavFor: '.service-details-slider-min'
+      });
+      $('.service-details-slider-min').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.service-details-slider-big',
+        dots: false,
+        arrows:false,
+        centerMode: false,
+        focusOnSelect: true
+      });
+
+
     //loader
     $(".loader").fadeOut("slow");
 

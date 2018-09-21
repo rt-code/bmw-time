@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+
+      <meta charset="UTF-8">
+
+      <!-- responsive -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- / responsive -->
+
+      <title>Icbcode CMS</title>
+      
+      <!-- favicon -->
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+      <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+      <link rel="manifest" href="img/favicon/manifest.json">
+      <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="theme-color" content="#ffffff">
+      <!-- / favicon -->
+      
+      <!-- libs -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+       <link rel="stylesheet" href="libs/ui/jquery-ui.min.css" />
+      <!-- / libs -->
+      
+      <!-- custom styles & responsive -->
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/media.css">
+      <!-- / custom styles & responsive -->
+
+   </head>
+   <body>
+      
+      <div class="loader"></div>
+      
+      <div class="mobile-bar">
+               <div id="nav-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>      
+               <a href="/" class="logo">
+                  <img src="img/logo-w.png">
+               </a>   
+      </div>
+
+      <div class="mobile-menu">
+         <ul>
+            <li>
+               <a href="#">
+                  <span class="icon-wrap">
+                     <img src="img/menu1.svg">
+                  </span>
+                  <span>Страницы сайта</span>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <span class="icon-wrap">
+                     <img src="img/menu2.svg">
+                  </span>
+                  <span>Уведомления</span>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <span class="icon-wrap">
+                     <img src="img/menu3.svg">
+                  </span>
+                  <span>Настройки сайта</span>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <span class="icon-wrap">
+                     <img src="img/menu4.svg">
+                  </span>
+                  <span>На сайт</span>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <span class="icon-wrap">
+                     <img src="img/menu5.svg">
+                  </span>
+                  <span>Выход</span>
+               </a>
+            </li>
+         </ul>
+      </div>
+
+      <div class="left-bar">
+         <a href="/" class="logo"><img src="img/logo.png"></a>
+
+         <ul class="menu">
+            <li class="active">
+               <a href="#" class="tooltip" title="Страницы сайта">
+                  <span class="icon-wrap">
+                     <img src="img/menu1.svg">
+                  </span>
+               </a>
+            </li>
+            <li>
+               <a href="#" class="tooltip" title="Уведомления">
+                  <span class="icon-wrap">
+                     <img src="img/menu2.svg">
+                  </span>
+               </a>
+            </li>
+            <li>
+               <a href="#" class="tooltip" title="Настройки сайта">
+                  <span class="icon-wrap">
+                     <img src="img/menu3.svg">
+                  </span>
+               </a>
+            </li>
+            <li>
+               <a href="#" class="tooltip" title="На сайт">
+                  <span class="icon-wrap">
+                     <img src="img/menu4.svg">
+                  </span>
+               </a>
+            </li>
+            <li>
+               <a href="#" class="tooltip" title="Выход">
+                  <span class="icon-wrap">
+                     <img src="img/menu5.svg">
+                  </span>
+               </a>
+            </li>
+         </ul>
+      </div>
+
+      <div class="page-content">
+         <div class="top-bar">
+
+            <div class="breadcrumbs">
+               <a href="/" class="website-name">Mamontt.ru</a>
+               <span class="pre"> / </span>
+               <span>Панель управления</span>
+            </div>
+
+            <div class="right">
+               <ul>
+                     <li>
+                        <a href="#">
+                           <span class="icon-wrap">
+                              <img src="img/icons/setting.svg">
+                           </span>
+                           <span class="name">Настройки</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" target="_blank">
+                           <span class="icon-wrap">
+                              <img src="img/icons/reply.svg">
+                           </span>
+                           <span class="name">На сайт</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <span class="icon-wrap">
+                              <img src="img/icons/exit.svg">
+                           </span>
+                           <span class="name">Выход</span>
+                        </a>
+                     </li>
+                  </ul>   
+            </div>
+
+         </div>
+
+         <div class="content">
+            <p class="page-title">Создание блока страниц</p>
+
+
+            
+            <div class="wrapper">
+               <div class="row">
+                  <div class="col-md-6 col-sm-7 col-xs-12">
+                     <p class="form-desc">Для добавления блока заполните следующие поля:</p><br>
+                     <div class="input-row fuck">
+                        <label>Наименование</label>
+                        <input type="text">
+                     </div>
+                     <div class="input-row">
+                        <label>Комментарий</label>
+                        <input type="text">
+                     </div>
+                     <div class="checkbox-row">
+                        <label>
+                           <input type="checkbox">
+                           <span>Сортировка перетаскиванием</span>
+                        </label>
+                     </div>
+                     <div class="input-row">
+                        <label>Поля для сортировки</label>
+                        <input type="text">
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-sm-5 col-xs-12">
+                     <div class="page-info">
+                        <span class="icon-wrap">
+                           <img src="img/block-icon.png">
+                        </span>
+                        <div class="desc">
+                           <p>Блоки страниц используются  для создания единого формата данных. Вы можете использовать готовые шаблоны </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+
+                     <div class="fields">
+                        <p class="form-desc">Доступные шаблоны данных</p>
+
+                        <div class="field">
+                           <p class="name">Наименование шаблона</p>
+                           <p class="type">Комментарий</p>
+                           <span class="delete"></span>
+                        </div>
+
+                        <div class="field">
+                           <p class="name">Наименование шаблона</p>
+                           <p class="type">Комментарий</p>
+                           <span class="delete"></span>
+                        </div>
+                     </div>
+
+                     <div class="add-field">
+                        <div class="add-fields-content">
+                           <div class="input-row">
+                              <label>Выбор шаблона</label>
+                              <input type="text">
+                           </div>
+                           <button class="btn">Добавить</button>
+                           <button class="btn btn-dark">Создать шаблон</button>
+                        </div>
+                     </div>
+
+                     <div class="fields">
+                        <p class="form-desc">Отображаемые поля</p>
+
+                        <div class="field">
+                           <p class="name">Название поля</p>
+                           <p class="type">Шаблон данных</p>
+                           <span class="delete"></span>
+                        </div>
+
+                        <div class="field">
+                           <p class="name">Название поля</p>
+                           <p class="type">Шаблон данных</p>
+                           <span class="delete"></span>
+                        </div>
+                     </div>
+
+                     <div class="add-field">
+                        <div class="add-fields-content">
+                           <div class="input-row">
+                              <label>Шаблон данных</label>
+                              <input type="text">
+                           </div>
+                           <div class="input-row">
+                              <label>Наименование</label>
+                              <input type="text">
+                           </div>
+                           <button class="btn">Добавить</button>
+                        </div>
+                     </div>
+
+                     <div class="buttons">
+                        <button class="btn">Сохранить</button>
+                        <button class="btn btn-dark">Отмена</button>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+      
+      
+      <!-- javascript libs -->
+      <script src="js/jquery.js"></script>
+      <script src="libs/ui/jquery-ui.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+      <!-- / javascript libs -->
+
+      <!-- custom javascript -->
+      <script src="js/init.js"></script>
+      <!-- / custom javascript -->
+
+   </body>
+</html>
