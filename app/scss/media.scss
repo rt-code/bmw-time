@@ -292,6 +292,7 @@
         .right{
          width: 100%;
             padding:0 15px;
+
             margin-top: 20px;
         }
     }
@@ -488,7 +489,7 @@
             display: none;
         }
         footer .bottom .container .right{
-            justify-content: center;
+            justify-content: space-between;
             width: 100%;
         }
         footer .bottom .container .copyright, footer .bottom .container .logo{
@@ -568,6 +569,10 @@
      .index-slider .slide .container .right .image:before{
         display: none;
     }
+    footer .bottom .container .right{
+        justify-content: space-between;
+    }
+
     }
 
     /* Small Devices, Tablets */
