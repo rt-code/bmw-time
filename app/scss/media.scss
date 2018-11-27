@@ -578,6 +578,9 @@
     /* Small Devices, Tablets */
 
 @media only screen and (max-width : 767px) {
+    .instagram-section{
+        margin-top: 40px;
+    }
     .contact-page .right .menu li a, .contact-page .right p.title{
         font-size:16px;
     }
